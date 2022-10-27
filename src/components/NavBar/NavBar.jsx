@@ -1,6 +1,5 @@
 import React from 'react'
 import "./NavBar.css"
-import testVideo from "../../media/videoTest.webm"
 
 const NavBar = ({isScrolling}) => {
 
