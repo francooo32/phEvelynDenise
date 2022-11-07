@@ -24,7 +24,6 @@ function App() {
       <Cover/>
       <About/>
       <Slider/>
-      
     </div>
   );
 }
