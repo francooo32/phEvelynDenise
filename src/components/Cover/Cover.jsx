@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Cover.css"
-import testVideo from "../../media/videoTest.webm"
+import testVideo from "../../public/media/videoTest.webm"
 
 const Cover = () => {
   return (
