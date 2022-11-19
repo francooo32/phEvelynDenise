@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       <NavBar isScrolling={scrollHeight}/>
       <Cover/>
-      <About/>
+      {/* <About/> */}
       <Slider/>
       <Info/>
       <Footer/>
