@@ -1,7 +1,7 @@
 import React from 'react'
 import "./cover.css"
 import testVideo from "../../public/media/videoTest.webm"
-import aboutPhoto from "../../public/media/FotoAbout.jpg"
+import aboutPhoto from "../../public/media/fotoAbout.jpg"
 
 const Cover = () => {
   return (
