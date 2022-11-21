@@ -1,11 +1,11 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import Cover from './components/Cover/Cover.jsx';
-import NavBar from './components/NavBar/NavBar.jsx';
-import About from './components/About/About.jsx';
-import Slider from './components/Slider/Slider.jsx';
-import Info from './components/Info/Info.jsx';
-import Footer from './components/Footer/Footer.jsx';
+import Cover from './components/cover/cover.jsx';
+import NavBar from './components/navBar/navBar.jsx';
+import About from './components/about/about.jsx';
+import Slider from './components/slider/slider.jsx';
+import Info from './components/info/info.jsx';
+import Footer from './components/footer/footer.jsx';
 
 function App() {
 

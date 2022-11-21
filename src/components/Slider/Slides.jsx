@@ -1,5 +1,5 @@
 import React from "react";
-import "./Slider.css" 
+import "./slider.css" 
 
 const slidesInfo = [
 
@@ -35,8 +35,6 @@ const slidesInfo = [
     }
 
 ] 
-
-console.log(slidesInfo[0].src);
 
 const slides = slidesInfo.map( slide => (
     <div className="slider-container">

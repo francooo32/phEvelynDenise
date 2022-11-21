@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Cover.css"
+import "./cover.css"
 import testVideo from "../../public/media/videoTest.webm"
 import aboutPhoto from "../../public/media/FotoAbout.jpg"
 

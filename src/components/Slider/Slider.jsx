@@ -1,8 +1,8 @@
 import React from 'react'
-import "./Slider.css"
+import "./slider.css"
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css"
-import Slides from "./Slides";
+import Slides from "./slides";
 // import aboutPhoto from "../../media/FotoAbout.jpg"
 
 const Slider = () => {
