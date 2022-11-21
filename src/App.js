@@ -9,7 +9,7 @@ import Footer from './components/Footer/Footer.jsx';
 
 function App() {
 
-  const [scrollHeight, setScrolHeight] = useState(0)
+  const [scrollHeight, setScrolHeight] = useState(0) 
 
   const handleScroll = () => {
     const position = window.pageYOffset;
