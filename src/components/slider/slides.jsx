@@ -6,7 +6,7 @@ const slidesInfo = [
     {
         src: require("../../public/media/1.jpg").default,
         alt: "altInfo 1",
-        desc: "altInfo 1"
+        desc: "Gastronomía"
 
     },
     {
