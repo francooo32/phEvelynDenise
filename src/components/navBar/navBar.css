@@ -18,6 +18,12 @@
 
 .navbar-logo a{
     color: white;
+    text-decoration: none;
+}
+
+.navbar-logo p{
+    color: white;
+    font-size: 50px;
 }
 
 .navbar-logo ul{
@@ -27,6 +33,7 @@
     display: flex;
     gap: 1rem;
     margin-left: auto;
+    padding-right: 30px;
 }
 
 .scrolling {

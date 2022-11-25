@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css"
-import aboutPhoto from "../../public/media/fotoAbout.jpg"
+// import aboutPhoto from "../../public/media/fotoAbout.jpg"
 
 const About = () => {
 
@@ -16,9 +16,9 @@ const About = () => {
             Culpa, enim. 
           </p>
         </div>
-        <div className="about-img">
+        {/* <div className="about-img">
             <img src={aboutPhoto} alt="aboutImg"></img>
-          </div>
+          </div> */}
     </div>
   )
 }

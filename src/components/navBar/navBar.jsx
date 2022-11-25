@@ -11,14 +11,16 @@ const NavBar = ({isScrolling}) => {
     <nav className={`navbar ${isScrolling > 20 ? "scrolling" : null}`}>
         <div className="navbar-logo" onClick={(returnToTop)}>
           
-          <a className="navbar-logo" href="/"  onClick={(returnToTop)}>Logo</a>
+          <a className="navbar-logo" href="/"  onClick={(returnToTop)}>
+            <p>Logo</p> 
+            </a>
             
             <ul>
               <li>
-                <a href="/jsd">Logo</a>
+                <a href="/about">About</a>
               </li>
               <li>
-                <a href="/jsd">Logo</a>
+                <a href="/portfolio">Portfolio</a>
               </li>
             </ul>
 
