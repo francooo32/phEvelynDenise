@@ -12,12 +12,15 @@ const NavBar = ({isScrolling}) => {
         <div className="navbar-logo" onClick={(returnToTop)}>
           
           <a className="navbar-logo" href="/"  onClick={(returnToTop)}>
-            <p>Logo</p> 
+            <p>🌸EvDen</p> 
             </a>
             
             <ul>
               <li>
                 <a href="/about">About</a>
+              </li>
+              <li>
+                <a href="/contact">Contact</a>
               </li>
               <li>
                 <a href="/portfolio">Portfolio</a>

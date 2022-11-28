@@ -1,12 +1,10 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import Cover from './components/cover/cover.jsx';
 import NavBar from './components/navBar/navBar.jsx';
-import Slider from './components/slider/slider.jsx';
-import Info from './components/info/info.jsx';
 import Footer from './components/footer/footer.jsx';
 import Home from './pages/components/home/home.jsx'
 import About from './pages/components/about/about.jsx'
+import Contact from './pages/components/contact/contact.jsx'
 import Portfolio from './pages/components/portfolio/portfolio.jsx'
 
 function App() {
@@ -31,15 +29,19 @@ function App() {
       case "/about":
         Component = About
         break
-        case "/portfolio":
-          Component = Portfolio
+        case "/contact":
+          Component = Contact
           break
+            case "/portfolio":
+            Component = Portfolio
+            break
   }
 
   return (
     <div className="App">
       <NavBar isScrolling={scrollHeight}/>
       <Component/>
+      <Footer/>
     </div>
   );
 }

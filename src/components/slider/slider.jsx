@@ -12,12 +12,10 @@ const Slider = () => {
     <div className="carousel-container">
       <div className='carousel-title'>
         
-        <h2>My project</h2>
-
       </div>
 
       <Carousel 
-          arrows
+          plugins={['arrows']}
           slidesPerPage={3}
           infinite
           animationSpeed={200}

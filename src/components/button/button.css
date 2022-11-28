@@ -1,0 +1,35 @@
+.button{
+    margin: 6px 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover{
+    background-position: right;
+}
+
+.primaryBtn{
+    background-color: rgb(25, 25, 25);
+    padding: 12px 24px;
+    border-radius: 15px;
+    color: #fff;
+    background-image: linear-gradient(to left, #2c2c54, #1b1b29, #16191f);
+    background-size: 200%;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    font-size: 30px;
+}
+
+.secondaryBtn{
+    background-color: rgb(25, 25, 25);
+    padding: 12px 24px;
+    border-radius: 15px;
+    color: #fff;
+    background-image: linear-gradient(to left, #2c2c54, #1b1b29, #16191f);
+    background-size: 200%;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    font-size: 30px;
+}

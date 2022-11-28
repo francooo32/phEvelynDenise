@@ -3,3 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.button-wrapper{
+  display: flex;
+  grid-gap: 18rem;
+  padding: 90px;
+}
