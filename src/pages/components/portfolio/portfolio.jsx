@@ -1,6 +1,6 @@
 import React from 'react'
 import "./portfolio.css"
-import ImgGallery from "../../../components/imggallery/imggallery.jsx"
+import ImgGallery from "../../../components/imggallery/imggallery.jsx"  
 
 const Portfolio = () => {
 
