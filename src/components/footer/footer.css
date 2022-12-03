@@ -46,7 +46,23 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.instagram, .facebook, .linkedin {
+.sns-links .instagram {
+    color: white;
+    font-size: 35px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-bottom: 4px solid transparent;
+}
+
+.sns-links .facebook {
+    color: white;
+    font-size: 35px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-bottom: 4px solid transparent;
+}
+
+.sns-links .linkedin {
     color: white;
     font-size: 35px;
     margin: 0 auto;
@@ -59,7 +75,7 @@
     transition: all 0.3s ease-out;
 }
 
-.design-by {
+.footer-sns .design-by {
     font-size: 18px;
     padding-left: 50px;
     color: white;

@@ -41,7 +41,7 @@ function App() {
     <div className="App">
       <NavBar isScrolling={scrollHeight}/>
       <Component/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

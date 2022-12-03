@@ -1,22 +1,14 @@
 import React from 'react'
-import './footer.css'
+import './footerstatic.css'
 
-const Footer = () => {
+const FooterStatic = () => {
   return (
-    <footer className="footer">
-        <div className="footer-info">
-            <h1>Your name</h1>
-            <p>Cosas genericas para escribir</p>
-        </div>
-        <div className="footer-contact">
-            <h3>Your name</h3>
-            <p>Cosas genericas para escribir</p>
-        </div>
-        <div className="footer-sns">
-            <div className="design-by">
+    <footer className="footerstatic">
+        <div className="footerstatic-sns">
+            <div className="footestaticdesign-by">
                 Diseñado por FrancoDev
             </div>
-            <div className="sns-links">
+            <div className="footerstaticsns-links">
                 <a href="https://www.instagram.com/ph.evelyndenise/?hl=es" target="_blank" rel="noreferrer">
                     <i className="fab fa-instagram instagram"></i>
                 </a>
@@ -34,4 +26,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default FooterStatic

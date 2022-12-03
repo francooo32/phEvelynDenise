@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import "./imggallery.css"
+import CloseSimbol from '@mui/icons-material/Close';
 
 const ImgGallery = () => {
 
@@ -40,16 +41,30 @@ const ImgGallery = () => {
 
     ]
 
+    const [model, setModel] = useState(false);
+    const [tempImgSrc, setTempImgSrc] = useState('')
+
+    const getImg = (imgSrc) =>{
+        setTempImgSrc(imgSrc);
+        setModel(true);
+    }
+
   return (
-    <div className="imgGallery">
-        {imgs.map( (item, index) =>{
-            return (
-                <div className="imgs" key={index}>
-                    <img src={item.imgSrc} style={{width: '100%'}}></img>
-                </div>
-            )
-        } )}
+    <>
+    <div className={model ? "model open" : "model"}>
+        <img src={tempImgSrc}/>
+        <CloseSimbol onClick={() => setModel(false)} />
     </div>
+    <div className="imgGallery">
+          {imgs.map((item, index) => {
+              return (
+                  <div className="imgs" key={index} onClick={() => getImg(item.imgSrc)}>
+                      <img src={item.imgSrc} style={{ width: '100%' }}></img>
+                  </div>
+              );
+          })}
+      </div>
+      </>
   )
 }
 
