@@ -17,7 +17,7 @@ const Footer = () => {
                 Diseñado por FrancoDev
             </div>
             <div className="sns-links">
-                <a href="" target="_blank" rel="noreferrer">
+                <a href="https://www.instagram.com/ph.evelyndenise/?hl=es" target="_blank" rel="noreferrer">
                     <i className="fab fa-instagram instagram"></i>
                 </a>
                 <a href="" target="_blank" rel="noreferrer"> 
