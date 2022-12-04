@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import "./imggallery.css"
-import CloseSimbol from '@mui/icons-material/Close';
 
 const ImgGallery = () => {
 
@@ -8,7 +7,7 @@ const ImgGallery = () => {
 
         {
             id: 1,
-            imgSrc: require("../../public/media/persons/CANDE.jpg").default
+            imgSrc: require("../../public/media/persons/NALU.jpg").default
         },
         {
             id: 2,
@@ -20,7 +19,7 @@ const ImgGallery = () => {
         },
         {
             id: 4,
-            imgSrc: require("../../public/media/persons/IGNACIO.jpg").default
+            imgSrc: require("../../public/media/persons/LULA.jpg").default
         },
         {
             id: 5,
@@ -28,11 +27,11 @@ const ImgGallery = () => {
         },
         {
             id: 6,
-            imgSrc: require("../../public/media/persons/LULA.jpg").default
+            imgSrc: require("../../public/media/persons/CANDE.jpg").default
         },
         {
             id: 7,
-            imgSrc: require("../../public/media/persons/NALU.jpg").default
+            imgSrc: require("../../public/media/persons/IGNACIO.jpg").default
         },
         {
             id: 8,
@@ -53,7 +52,7 @@ const ImgGallery = () => {
     <>
     <div className={model ? "model open" : "model"}>
         <img src={tempImgSrc}/>
-        <CloseSimbol onClick={() => setModel(false)} />
+        <button class="btn-close" onClick={() => setModel(false)}>&times;</button>
     </div>
     <div className="imgGallery">
           {imgs.map((item, index) => {
