@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import NavBar from './components/navBar/navBar.jsx';
 import Footer from './components/footer/footer.jsx';
 import Home from './pages/components/home/home.jsx'
@@ -20,27 +21,18 @@ function App() {
     window.addEventListener("scroll", handleScroll);
   }, [scrollHeight])
 
-  console.log(window.location);
-  let Component
-  switch (window.location.pathname) {
-    case "/":
-      Component = Home
-      break
-      case "/about":
-        Component = About
-        break
-        case "/contact":
-          Component = Contact
-          break
-            case "/portfolio":
-            Component = Portfolio
-            break
-  }
-
   return (
     <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={`<h1>Page not found<h1/>`} />
+        </Routes>
+      </Router>
       <NavBar isScrolling={scrollHeight}/>
-      <Component/>
       {/* <Footer/> */}
     </div>
   );

@@ -3,15 +3,21 @@ import "./slider.css"
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css"
 import Slides from "./slides";
+import Button from '../../components/button/button.jsx';
+import { BUTTON_TYPES } from '../../common/data/buttonConst';
+import {Navigate} from "react-router-dom"
 // import aboutPhoto from "../../media/FotoAbout.jpg"
 
 const Slider = () => {
 
-
   return (
-    <div className="carousel-container">
-      <div className='carousel-title'>
+    <div className="carousel-container" id="slider">
+      {/* <div className='carousel-title'>
         
+      </div>  */}
+
+      <div className="button-wrapper">
+          <Button type={BUTTON_TYPES.TERTIARY} btnText="Portfolio →"/>
       </div>
 
       <Carousel 

@@ -5,6 +5,7 @@ import Button from '../../components/button/button.jsx';
 import { BUTTON_TYPES } from '../../common/data/buttonConst';
 
 const Cover = () => {
+
   return (
     <div className="cover-container">
         {/* <video className="video" src={testVideo} autoPlay loop muted/> */}
@@ -13,7 +14,7 @@ const Cover = () => {
         <p>Fotografía</p>
         <div className="button-wrapper">
           <Button type={BUTTON_TYPES.PRIMARY} btnText="Contactame"/>
-          <Button type={BUTTON_TYPES.SECONDARY} btnText="Mi trabajo"/>
+          <Button type={BUTTON_TYPES.SECONDARY} btnText="Mi trabajo" />
         </div>
     </div>
   )
