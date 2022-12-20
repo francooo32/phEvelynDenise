@@ -30,7 +30,7 @@ const Button = (props) => {
 
     }
 
-    if(type != BUTTON_TYPES.SECONDARY){
+    if(type != BUTTON_TYPES.PRIMARY){
 
       return (
         <div className={`${getButtonClass()}`} onClick={() => {

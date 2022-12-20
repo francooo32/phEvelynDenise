@@ -10,7 +10,7 @@
     background-position: right;
 }
 
-.primaryBtn{
+.primaryBtn a{
     background-color: rgb(25, 25, 25);
     padding: 12px 24px;
     border-radius: 15px;
@@ -23,9 +23,10 @@
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     opacity: 0.8;
+    text-decoration: none;
 }
 
-.secondaryBtn a{
+.secondaryBtn{
     background-color: rgb(25, 25, 25);
     padding: 12px 24px;
     border-radius: 15px;
