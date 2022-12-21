@@ -12,6 +12,7 @@
 .contact-container .contactForm{
     display: flex;
     flex-direction: column; 
+    width: 410px;
 }
 
 .contact-container .contactForm .contactCells{
@@ -20,7 +21,34 @@
 
 .contact-container .contactForm .contactCells label{
     color: white;
+    font-size: 45px;
+    font-family: 'Open Sans Condensed';
 }
+
+.contact-container .contactForm .contactCells input{
+    height: 50px;
+}
+
+.contact-container .contactForm .contactCells input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+
+  .contact-container .contactForm .contactCells textarea {
+    width: 160%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
 
 .contact-desc{
     display: flex;
