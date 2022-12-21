@@ -1,15 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import "./contactform.css"
 import {useForm} from "react-hook-form"
-import emailjs from '@emailjs/browser';
+import {sendMail} from './helper/mailform'
 import aboutPhoto from "../../public/media/fotoSobreMi.jpg"
 
 const ContactForm = () => {
 
   const { register, formState: {errors}, handleSubmit} = useForm();
 
+  const [values, setValues]=useState({
+    email:"",
+    msj:"",
+    status:false
+  })
+  const {email, msj, status}=values;
+
   const onSubmit = (data) => {
     console.log(data)
+    const email = data.email
+    const msj = data.msj
+    sendMail({email, msj}).then(data=>{
+        if(data.err){
+            console.log("err", data.err)
+        }else{
+            console.log("Success", data)
+            setValues({...values,status:true})
+        }
+    }).catch(console.log("error sending the mail"))
   }
 
   return (
