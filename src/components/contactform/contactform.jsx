@@ -2,9 +2,13 @@ import React, { useState, useEffect } from 'react';
 import "./contactform.css"
 import {useForm} from "react-hook-form"
 import {sendMail} from './helper/mailform'
-import aboutPhoto from "../../public/media/fotoSobreMi.jpg"
+import location from "../../public/media/icons/location.png"
+import telephone from "../../public/media/icons/telephone.png"
+import mail from "../../public/media/icons/email.png"
 
 const ContactForm = () => {
+
+//   var filterLoc = require(location).default; 
 
   const { register, formState: {errors}, handleSubmit} = useForm();
 
@@ -33,36 +37,43 @@ const ContactForm = () => {
     <div className="contact-container">
         {/* <h1>Pongamosnos en contacto!</h1> */}
 
-        <form className="contactForm" onSubmit={handleSubmit(onSubmit)}>
+        <div className='contact-list'>
+            <h3>--Envíame un mensaje!</h3> 
+            <p><img src={location} alt="loc" width="15px" />Alfredo Lorenzo Palacios 457</p>
+            <p><img src={telephone} alt="tel" width="15px" />1162767256</p>
+            <p><img src={mail} alt="email" width="15px" />franco.nic.ch@hotmail.com</p>
+        </div>
 
+        <form className="contactForm" onSubmit={handleSubmit(onSubmit)}>
+            <h1>Trabajemos juntos!</h1>
             <div className="contactCells">
-                <label>Nombre</label>
+                <p>Nombre</p>
                 <input type="text" {...register('nombre', {required:true, maxLength:20})}/>
                 {errors.nombre?.type === 'required' && <p>El campo Nombre es obligatorio</p>}
                 {errors.nombre?.type === 'maxLength' && <p>El campo Nombre debe tener menos de 20 caracteres</p>}
             </div>
 
             <div className="contactCells">
-                <label>Telefono</label>
+                <p>Telefono</p>
                 <input type="text" {...register('telefono', {required:true, maxLength:20})}/>
                 {errors.nombre?.type === 'required' && <p>El campo Nombre es obligatorio</p>}
                 {errors.nombre?.type === 'maxLength' && <p>El campo Nombre debe tener menos de 20 caracteres</p>}
             </div>
 
             <div className="contactCells">
-                <label>Email</label>
+                <p>Email</p>
                 <input type="text" {...register('email', {required:true, maxLength:40, 
                     pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i})}/>
                 {errors.email?.type === 'pattern' && <p>El formato de email es incorrecto</p>}    
             </div>
 
             <div className="contactCells">
-                <label for="msj">Mensaje</label>
+                <p for="msj">Mensaje</p>
                 <textarea id="msj" name="msj" rows="4" cols="50" {...register('msj', {required:true})}/>
                 {errors.msj?.type === 'required' && <p>El campo Mensaje es obligatorio</p>}
             </div>
 
-            <input type="submit" value="Enviar"/>
+            <input id="button" type="submit" value="Enviar"/>
 
         </form>
 
