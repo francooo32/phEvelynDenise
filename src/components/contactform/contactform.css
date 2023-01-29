@@ -2,11 +2,25 @@
     display: flex;
     background-color: #252525;
     color: black;
-    background-image: linear-gradient( to top right, black , rgba(78, 30, 78, 0.411));
+    /* background-image: linear-gradient( to top right, black , rgba(78, 30, 78, 0.411)); */
     height: 100vh;
     padding: 100px 0 100px 0;
     /* flex-direction: column; */
     justify-content: center;
+}
+
+.contact-list {
+    width: 27%;
+    color: white;
+}
+
+.contact-list h3{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.contact-list p{
+    padding-top: 15px;
 }
 
 .contact-container .contactForm{
@@ -15,18 +29,43 @@
     width: 410px;
 }
 
+.contact-container .contactForm h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
 .contact-container .contactForm .contactCells{
     display: contents;
 }
 
-.contact-container .contactForm .contactCells label{
+.contact-container .contactForm .contactCells p{
     color: white;
-    font-size: 45px;
-    font-family: 'Open Sans Condensed';
+    font-size: 30px;
+    font-weight: bolder;
 }
 
 .contact-container .contactForm .contactCells input{
     height: 50px;
+}
+
+#button{
+    background-color: rgba(25, 25, 25, 0);
+    padding: 12px 24px;
+    border-radius: 15px;
+    color: #fff;
+    /* background-image: linear-gradient(to left, #2c2c54, #1b1b29, #16191f); */
+    background-size: 100%;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    /* opacity: 0.8; */
+    text-decoration: underline;
+    align-self: center;
+    cursor: pointer;
 }
 
 .contact-container .contactForm .contactCells input[type=text] {

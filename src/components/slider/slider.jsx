@@ -5,8 +5,6 @@ import "@brainhubeu/react-carousel/lib/style.css"
 import Slides from "./slides";
 import Button from '../../components/button/button.jsx';
 import { BUTTON_TYPES } from '../../common/data/buttonConst';
-import {Navigate} from "react-router-dom"
-// import aboutPhoto from "../../media/FotoAbout.jpg"
 
 const Slider = () => {
 

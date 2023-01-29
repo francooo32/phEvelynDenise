@@ -1,44 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import "./imggallery.css"
+import imgsRetratos from "./imagesforgallery/imagesRetrato.jsx"
+import imgsGastronomia from "./imagesforgallery/imagesGastronomia.jsx"
+import imgsFotoproducto from "./imagesforgallery/imagesFotoproducto.jsx"
 
 const ImgGallery = () => {
-
-    let imgs = [
-
-        {
-            id: 1,
-            imgSrc: require("../../public/media/persons/NALU.jpg").default
-        },
-        {
-            id: 2,
-            imgSrc: require("../../public/media/persons/CLARA.jpg").default
-        },
-        {
-            id: 3,
-            imgSrc: require("../../public/media/persons/INES.jpg").default
-        },
-        {
-            id: 4,
-            imgSrc: require("../../public/media/persons/LULA.jpg").default
-        },
-        {
-            id: 5,
-            imgSrc: require("../../public/media/persons/EVE.jpg").default
-        },
-        {
-            id: 6,
-            imgSrc: require("../../public/media/persons/CANDE.jpg").default
-        },
-        {
-            id: 7,
-            imgSrc: require("../../public/media/persons/IGNACIO.jpg").default
-        },
-        {
-            id: 8,
-            imgSrc: require("../../public/media/persons/PRINCE.jpg").default
-        }
-
-    ]
 
     const [model, setModel] = useState(false);
     const [tempImgSrc, setTempImgSrc] = useState('')
@@ -54,8 +20,9 @@ const ImgGallery = () => {
         <img src={tempImgSrc}/>
         <button class="btn-close" onClick={() => setModel(false)}>&times;</button>
     </div>
+    <h2>RETRATOS</h2>
     <div className="imgGallery">
-          {imgs.map((item, index) => {
+          {imgsRetratos.map((item, index) => {
               return (
                   <div className="imgs" key={index} onClick={() => getImg(item.imgSrc)}>
                       <img src={item.imgSrc} style={{ width: '100%' }}></img>
@@ -63,7 +30,29 @@ const ImgGallery = () => {
               );
           })}
       </div>
-      </>
+
+    <h2>GASTRONOMIA</h2>
+    <div className="imgGallery">
+          {imgsGastronomia.map((item, index) => {
+              return (
+                  <div className="imgs" key={index} onClick={() => getImg(item.imgSrc)}>
+                      <img src={item.imgSrc} style={{ width: '100%' }}></img>
+                  </div>
+              );
+          })}
+      </div>
+
+    <h2>FOTOPRODUCTO</h2>
+    <div className="imgGallery">
+          {imgsFotoproducto.map((item, index) => {
+              return (
+                  <div className="imgs" key={index} onClick={() => getImg(item.imgSrc)}>
+                      <img src={item.imgSrc} style={{ width: '100%' }}></img>
+                  </div>
+              );
+          })}
+      </div>
+    </>
   )
 }
 

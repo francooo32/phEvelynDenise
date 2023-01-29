@@ -13,7 +13,7 @@ const Cover = () => {
         <h1>Evelyn Denise</h1>
         <p>Fotografía</p>
         <div className="button-wrapper">
-          <Button type={BUTTON_TYPES.PRIMARY} btnText="Mi trabajo"/>
+          <Button type={BUTTON_TYPES.PRIMARY} btnText="Mi trabajo ↓"/>
           <Button type={BUTTON_TYPES.SECONDARY} btnText="Contactame" />
         </div>
     </div>

@@ -5,7 +5,7 @@ const MyWork = () => {
   return (
     <div className="myWork-cointainer">
         <div className="myWork">
-            <h1>Discover my work</h1>
+            <h1>Descubre mi trabajo</h1>
         </div>
     </div>
   )
