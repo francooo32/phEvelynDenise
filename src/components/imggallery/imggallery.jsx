@@ -21,7 +21,7 @@ const ImgGallery = () => {
         <button class="btn-close" onClick={() => setModel(false)}>&times;</button>
     </div>
     <h2>RETRATOS</h2>
-    <div className="imgGallery">
+    <div className="imgGallery" id="retratos">
           {imgsRetratos.map((item, index) => {
               return (
                   <div className="imgs" key={index} onClick={() => getImg(item.imgSrc)}>
@@ -32,7 +32,7 @@ const ImgGallery = () => {
       </div>
 
     <h2>GASTRONOMIA</h2>
-    <div className="imgGallery">
+    <div className="imgGallery" id="gastronomia">
           {imgsGastronomia.map((item, index) => {
               return (
                   <div className="imgs" key={index} onClick={() => getImg(item.imgSrc)}>
@@ -43,7 +43,7 @@ const ImgGallery = () => {
       </div>
 
     <h2>FOTOPRODUCTO</h2>
-    <div className="imgGallery">
+    <div className="imgGallery" id="fotoproducto">
           {imgsFotoproducto.map((item, index) => {
               return (
                   <div className="imgs" key={index} onClick={() => getImg(item.imgSrc)}>

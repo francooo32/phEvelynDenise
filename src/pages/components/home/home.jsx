@@ -5,6 +5,7 @@ import NavBar from '../../../components/navBar/navBar.jsx';
 import Footer from '../../../components/footer/footer.jsx';
 import Slider from '../../../components/slider/slider.jsx';
 import MyWork from '../../../components/mywork/myWork.jsx';
+import FooterStatic from "../../../components/footerstatic/footerstatic.jsx" 
 import Info from '../../../components/info/info.jsx';
 
 
@@ -15,8 +16,9 @@ function Home() {
       <Cover/>
       <MyWork/>
       <Slider/>
-      <Info/>
-      <Footer/>
+      {/* <Info/> */}
+      {/* <Footer/> */}
+      <FooterStatic/>
     </div>
   );
 }

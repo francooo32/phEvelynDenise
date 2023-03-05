@@ -8,19 +8,19 @@ const slidesInfo = [
         src: require("../../public/media/persons/LULA.jpg").default,
         alt: "altInfo 1",
         desc: "Retratos",
-        route: "/portfolio"
+        route: "/portfolio#retratos"
     },
     {
         src: require("../../public/media/1.jpg").default,
         alt: "altInfo 2",
         desc: "Gastronomía",
-        route: "/portfolio"
+        route: "/portfolio#gastronomia"
     },
     {
         src: require("../../public/media/3.jpg").default,
         alt: "altInfo 3",
         desc: "Fotoproducto",
-        route: "/portfolio"
+        route: "/portfolio#fotoproducto"
     },
     {
         src: require("../../public/media/4.jpg").default,
