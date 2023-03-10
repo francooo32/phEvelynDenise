@@ -8,31 +8,29 @@ const slidesInfo = [
         src: require("../../public/media/persons/LULA.jpg").default,
         alt: "altInfo 1",
         desc: "Retratos",
-        route: "/portfolio#retratos"
+        route: "/portfolio#retratos",
+        className: "imgGen"
     },
     {
         src: require("../../public/media/1.jpg").default,
         alt: "altInfo 2",
         desc: "Gastronomía",
-        route: "/portfolio#gastronomia"
+        route: "/portfolio#gastronomia",
+        className: "imgGen"
     },
     {
         src: require("../../public/media/3.jpg").default,
         alt: "altInfo 3",
         desc: "Fotoproducto",
-        route: "/portfolio#fotoproducto"
+        route: "/portfolio#fotoproducto",
+        className: "imgGen"
     },
     {
-        src: require("../../public/media/4.jpg").default,
+        src: require("../../public/media/paisajes/2.jpg").default,
         alt: "altInfo 4",
-        desc: "altInfo 4"
-
-    },
-    {
-        src: require("../../public/media/5.jpg").default,
-        alt: "altInfo 5",
-        desc: "altInfo 5"
-
+        desc: "Paisajes",
+        route: "/portfolio#paisaje",
+        className: "imgPai"
     }
 
 ] 
@@ -40,7 +38,7 @@ const slidesInfo = [
 const slides = slidesInfo.map( slide => (
     <div className="slider-container">
         <a href={slide.route}>
-        <img src={(slide.src)} alt={slide.alt} />
+        <img className={slide.className} src={(slide.src)} alt={slide.alt} />
         </a>
         <div className="slide-desc">
             <span>{slide.desc}</span>

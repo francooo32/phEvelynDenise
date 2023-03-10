@@ -30,6 +30,12 @@ const Button = (props) => {
 
     }
 
+    if (goToPortfolio && type === BUTTON_TYPES.SECONDARY){
+      
+      return <Navigate to="/contact" />
+
+    }
+
     if(type != BUTTON_TYPES.PRIMARY){
 
       return (

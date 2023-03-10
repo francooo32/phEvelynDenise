@@ -6,7 +6,7 @@ const imgsGastronomia = [
     },
     {
         id: 2,
-        imgSrc: require("../../../public/media/gastronomy/5.jpg").default
+        imgSrc: require("../../../public/media/gastronomy/2.jpg").default
     },
     {
         id: 3,
@@ -14,15 +14,15 @@ const imgsGastronomia = [
     },
     {
         id: 4,
-        imgSrc: require("../../../public/media/gastronomy/7.jpg").default
+        imgSrc: require("../../../public/media/gastronomy/5.jpg").default
     },
     {
         id: 5,
-        imgSrc: require("../../../public/media/gastronomy/2.jpg").default
+        imgSrc: require("../../../public/media/gastronomy/6.jpg").default
     },
     {
         id: 6,
-        imgSrc: require("../../../public/media/gastronomy/6.jpg").default
+        imgSrc: require("../../../public/media/gastronomy/7.jpg").default
     }
     // {
     //     id: 7,

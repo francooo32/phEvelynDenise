@@ -3,6 +3,7 @@ import "./imggallery.css"
 import imgsRetratos from "./imagesforgallery/imagesRetrato.jsx"
 import imgsGastronomia from "./imagesforgallery/imagesGastronomia.jsx"
 import imgsFotoproducto from "./imagesforgallery/imagesFotoproducto.jsx"
+import imgsPaisaje from "./imagesforgallery/imagesPaisaje.jsx"
 
 const ImgGallery = () => {
 
@@ -24,8 +25,8 @@ const ImgGallery = () => {
     <div className="imgGallery" id="retratos">
           {imgsRetratos.map((item, index) => {
               return (
-                  <div className="imgs" key={index} onClick={() => getImg(item.imgSrc)}>
-                      <img src={item.imgSrc} style={{ width: '100%' }}></img>
+                  <div className={item.className} key={index} onClick={() => getImg(item.imgSrc)}>
+                      <img src={item.imgSrc}></img>
                   </div>
               );
           })}
@@ -52,6 +53,18 @@ const ImgGallery = () => {
               );
           })}
       </div>
+
+      <h2>FOTOPRODUCTO</h2>
+        <div className="imgGallery" id="paisaje">
+          {imgsPaisaje.map((item, index) => {
+              return (
+                  <div className="imgs" key={index} onClick={() => getImg(item.imgSrc)}>
+                      <img src={item.imgSrc} style={{ width: '100%' }}></img>
+                  </div>
+              );
+          })}
+      </div>
+      
     </>
   )
 }
