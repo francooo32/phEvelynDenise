@@ -29,10 +29,10 @@
 .footerstaticsns-links {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.instagram, .facebook, .linkedin {
+.instagram, .behance, .linkedin, .envelope {
     color: white;
     font-size: 20px;
     margin: 0 auto;
@@ -40,7 +40,7 @@
     border-bottom: 4px solid transparent;
 }
 
-.instagram:hover, .facebook:hover, .linkedin:hover {
+.instagram:hover, .behance:hover, .linkedin:hover, .envelope:hover {
     border-color: white;
     transition: all 0.3s ease-out;
 }

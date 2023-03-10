@@ -22,13 +22,26 @@
     cursor: pointer;
 }
 
-.slider-container a > img{
+.slider-container a > .imgGen{
     object-fit: contain;
     transition: all 0.2s ease-in-out;
     height: 570px;
 }
 
-.slider-container a:hover > img{
+.slider-container a:hover > .imgGen{
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+.slider-container a > .imgPai{
+    object-fit: contain;
+    transition: all 0.2s ease-in-out;
+    height: 570px;
+    padding: 0px 231px 110px 0px;
+
+}
+
+.slider-container a:hover > .imgPai{
     transform: scale(1.2);
     opacity: 0.7;
 }

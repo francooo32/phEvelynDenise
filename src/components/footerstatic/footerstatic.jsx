@@ -12,11 +12,14 @@ const FooterStatic = () => {
                 <a href="https://www.instagram.com/ph.evelyndenise/?hl=es" target="_blank" rel="noreferrer">
                     <i className="fab fa-instagram instagram"></i>
                 </a>
-                <a href="" target="_blank" rel="noreferrer"> 
-                    <i className="fab fa-facebook facebook"></i>
+                <a href="https://phevelyndenise.myportfolio.com/work" target="_blank" rel="noreferrer"> 
+                    <i className="fab fa-behance behance"></i>
                 </a>
-                <a href="" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/santorodenise/" target="_blank" rel="noreferrer">
                     <i className="fab fa-linkedin linkedin"></i>
+                </a>
+                <a href="mailto:ph.evelyndenise@gmail.com" target="_blank" rel="noreferrer">
+                    <i className="fa fa-envelope envelope"></i>
                 </a>
             </div>
 

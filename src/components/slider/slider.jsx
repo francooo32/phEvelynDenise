@@ -1,6 +1,6 @@
 import React from 'react'
 import "./slider.css"
-import Carousel from "@brainhubeu/react-carousel";
+import Carousel, {infinitePlugin, slidesToShowPlugin} from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css"
 import Slides from "./slides";
 import Button from '../../components/button/button.jsx';
@@ -19,18 +19,29 @@ const Slider = () => {
       </div>
 
       <Carousel 
-          plugins={['arrows']}
-          slidesPerPage={3}
-          infinite
-          animationSpeed={200}
+          plugins={['arrows', {
+            resolve: infinitePlugin,
+            options: {
+              numberOfInfiniteClones: 1,
+            },
+          },
+          {
+            resolve: slidesToShowPlugin,
+            options: {
+             numberOfSlides: 4
+            }
+          }
+        ]}
+          // slidesPerPage={3}
+          animationSpeed={1000}
           centered
           offset={50}
           itemWidth={400}
           slides={Slides}
           breakpoints={{
             960: {
-              slidesPerPage: 1,
-              arrows: false,
+              // slidesPerPage: 1,
+              arrows: true,
               itemWidth: 250
             }
           }}
