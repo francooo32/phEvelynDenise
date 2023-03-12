@@ -12,7 +12,7 @@ const NavBar = ({isScrolling}) => {
         <div className="navbar-logo" onClick={(returnToTop)}>
           
           <a className="navbar-logo" href="/"  onClick={(returnToTop)}>
-            <p>🖤EvDen</p> 
+            <p>HOME</p> 
             </a>
             
             <ul>
