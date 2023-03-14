@@ -7,8 +7,8 @@ h2{
 
 .imgGallery{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
-    grid-auto-rows: minmax(460px, auto);
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+    grid-auto-rows: minmax(440px, auto);
     gap: 15px;
     /* -webkit-column-count: 3;
     -moz-column-count: 3;
