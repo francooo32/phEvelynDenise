@@ -54,7 +54,7 @@ const ImgGallery = () => {
           })}
       </div>
 
-      <h2>FOTOPRODUCTO</h2>
+      <h2>PAISAJE</h2>
         <div className="imgGallery" id="paisaje">
           {imgsPaisaje.map((item, index) => {
               return (
